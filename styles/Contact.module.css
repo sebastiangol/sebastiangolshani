@@ -1,0 +1,207 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(60, 6, 60);
+  width: 100%;
+  max-width: var(--section__size);
+  margin: 0 auto;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.34);
+  padding-bottom: 20px;
+  border: solid rgb(45, 5, 45);
+  border-radius: 18px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact__body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3em;
+  height: 29em;
+}
+
+.contact__email {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.27em;
+  /* font-size: max(1.32vw, 10px); */
+  width: auto;
+  max-width: 77%;
+  align-items: center;
+  justify-content: center;
+  border: solid rgb(51, 5, 51);
+  border-radius: 12px;
+  background-color: rgb(55, 5, 55);
+  align-self: center;
+  margin: 0.9em 1.02em;
+  padding: 0.8em 2em;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.contact__email:hover {
+  background-color: rgb(58, 5, 58);
+}
+
+.contact__email > h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.contact__emailIcon {
+  position: relative;
+  height: 2em !important;
+  width: 2em !important;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  border-left: solid rgb(53, 5, 53);
+  border-right: solid rgb(53, 5, 53);
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.contact__formEmail,
+.contact__formName,
+.contact__formMessage {
+  width: 88.5%;
+  margin-bottom: 0.5em;
+  font: inherit;
+  color: inherit;
+  outline: inherit;
+  border: solid rgb(51, 5, 51);
+  border-radius: 12px;
+  padding: 0.6em;
+  background-color: rgb(55, 5, 55);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.contact__formMessage {
+  width: 88.75%;
+  height: 10em;
+  resize: none;
+}
+
+.contact__formEmail:hover,
+.contact__formName:hover,
+.contact__formMessage:hover {
+  background-color: rgb(61, 5, 61);
+  border: solid rgb(42, 5, 42);
+}
+
+.contact__formEmail:focus,
+.contact__formName:focus,
+.contact__formMessage:focus {
+  background-color: rgb(61, 5, 61);
+  border: solid rgb(42, 5, 42);
+}
+
+.contact__formButton {
+  font-size: large;
+  color: inherit;
+  background-color: rgb(70, 6, 70);
+  font: inherit;
+  outline: inherit;
+  text-align: center;
+  border: solid rgb(51, 5, 51);
+  border-radius: 12px;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  padding: 0.6em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.contact__formButton:hover {
+  background-color: rgb(80, 5, 80);
+  transform: scale(1.03);
+}
+
+.contact__formButton:active {
+  background-color: rgb(65, 5, 65);
+  transform: scale(0.97);
+  color: var(--active__fontColor);
+}
+
+.contact__formSuccess {
+  color: rgb(0, 200, 0);
+  background-color: rgb(70, 5, 70);
+  font-weight: 500;
+  padding: 0.8em;
+  border: solid rgb(0, 120, 0);
+  border-radius: 12px;
+  text-align: center;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.contact__formSuccess:hover {
+  border: solid rgb(0, 140, 0);
+  background-color: rgb(75, 5, 75);
+  color: rgb(0, 240, 0);
+}
+
+.contact__formError {
+  color: red;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 1250px) {
+  .contact__body {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 1em;
+  }
+
+  .contact__email {
+    max-width: 20.5em;
+    font-size: max(1em, 1.65vw);
+  }
+
+  .contact__or {
+    height: 20%;
+    width: 50%;
+    border-left: 0;
+    border-right: 0;
+    border-top: solid rgb(53, 5, 53);
+    border-bottom: solid rgb(53, 5, 53);
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .contact__form {
+    max-width: 34em;
+  }
+}

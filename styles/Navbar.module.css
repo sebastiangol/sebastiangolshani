@@ -1,0 +1,166 @@
+.navbarLanding {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgba(60, 6, 60, 0);
+  width: 100%;
+  z-index: 50;
+  top: 0px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgba(60, 6, 60, 1);
+  width: 100%;
+  z-index: 50;
+  top: 0px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbar__title {
+  margin-left: 1.3em;
+  font-size: 1.1em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.navbar__appTitleLanding {
+  display: none;
+  font-size: 1em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  position: fixed;
+  background-color: rgba(60, 6, 60, 0);
+  width: 100%;
+  z-index: 50;
+  top: 0px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter, font-size;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbar__appTitleContent {
+  display: none;
+  font-size: 0.9em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  position: fixed;
+  background-color: rgba(60, 6, 60, 1);
+  width: 100%;
+  z-index: 50;
+  top: 0px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter, font-size;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbar__buttons {
+  display: flex;
+  margin-right: 0.7em;
+  align-items: center;
+}
+
+.navbar__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 10px;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.navbar__option:hover {
+  background-color: rgb(70, 5, 70);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.24);
+}
+
+.navbar__option:active {
+  background-color: rgb(51, 5, 51);
+  border-radius: 10px;
+  transform: scale(0.95);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar__optionActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 10px;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  background-color: rgb(51, 5, 51);
+  border-radius: 10px;
+  transform: scale(0.95);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar__optionIcon {
+  object-fit: contain;
+  height: 20px !important;
+  width: 20px !important;
+  margin-right: 2px;
+}
+
+.navbar__optionTitle {
+  font-size: 1.1em;
+}
+
+@media (max-width: 866px) {
+  .navbarLanding {
+    justify-content: center;
+    top: initial;
+    bottom: 0px;
+  }
+
+  .navbarContent {
+    justify-content: center;
+    top: initial;
+    bottom: 0px;
+    background-color: rgba(55, 6, 55, 1);
+  }
+
+  .navbar__title {
+    display: none;
+  }
+
+  .navbar__appTitleLanding {
+  }
+
+  .navbar__appTitleContent {
+    display: initial;
+  }
+
+  .navbar__buttons {
+    margin: 0;
+  }
+}

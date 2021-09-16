@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(60, 6, 60);
+  width: 100%;
+  max-width: var(--section__size);
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.34);
+  padding-bottom: 28px;
+  border: solid rgb(45, 5, 45);
+  border-radius: 18px;
+}
+
+.about__text {
+  display: inline-block;
+  border-right: 4px dotted white;
+  border-left: 4px dotted white;
+  width: 80%;
+  padding: 1em;
+  border-radius: 36px;
+}
+
+.about__text > p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+}
