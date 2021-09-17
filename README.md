@@ -2,7 +2,7 @@
 
 This website is deployed using vercel: https://sebastiangolshani.vercel.app/
 
-This is a personal portfolio website made from scratch using React/Next.js and Emailjs.
+This is a personal portfolio website made using React/Next.js and Emailjs.
 
 • The webpage is fully responsive on all screen sizes, using CSS media queries.
 
