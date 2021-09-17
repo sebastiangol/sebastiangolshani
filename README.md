@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# sebastiangolshani - Personal Portfolio
 
-## Getting Started
+This website is deployed using vercel: https://sebastiangolshani.vercel.app/
 
-First, run the development server:
+This is a personal portfolio website made from scratch using React, Next.js and Emailjs.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+• The webpage is fully responsive on all screen sizes, using CSS media queries.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+• Emailjs is used for handling form submissions.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The header sticks to the top of the page, and contains buttons that scroll the page to specific sections depending on the button.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The landing page contains a title, image and some contact information and clickable links.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+On the landing page, the header is merged with the page. When the page is scrolled far enough, the header changes its colour and shadow to differenciate itself from the page content.
 
-## Learn More
+The About section contains text.
 
-To learn more about Next.js, take a look at the following resources:
+The Skills section contains clickable skills. 
+Some of the skills have links that redirect to a technology's official website. 
+The onClick styling is different depending if the skill has a link or not.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Projects section contains projects. A project has an image, descriptions and two clickable buttons for the deployed website and the code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The Contact section contains an email in text and a contact form.
 
-## Deploy on Vercel
+• The contact form requires an email, name and message. The form is validated using the React Hook Form package. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+• On submission, if any fields are invalid, a red error message will display below the field. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+• If a valid submission is made, a success message will be displayed. 
+
+• On submission, a function from Emailjs will be performed, which will send the form submission to Emailjs, who will send the form submission in the form of an email.
