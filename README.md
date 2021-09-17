@@ -8,7 +8,7 @@ This is a personal portfolio website made using React/Next.js and Emailjs.
 
 • Emailjs is used for handling form submissions.
 
-The header sticks to the top of the page, and contains buttons that scroll the page to specific sections depending on the button.
+The header sticks to the top of the page, and contains buttons that scroll the page to specific sections depending on the button. On smaller screens the header will stick to the bottom of the screen for mobile ease-of-use.
 
 The landing page contains a title, image and some contact information and clickable links.
 
