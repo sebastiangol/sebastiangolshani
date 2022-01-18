@@ -15,6 +15,7 @@ import gitIcon from '../public/imagesSkills/gitIcon.png';
 import materialIcon from '../public/imagesSkills/materialIcon.png';
 import mapboxIcon from '../public/imagesSkills/mapboxIcon.png';
 import scrumIcon from '../public/imagesSkills/scrumIcon.png';
+import tsIcon from '../public/imagesSkills/tsIcon.png';
 
 function Skills() {
   return (
@@ -34,6 +35,8 @@ function Skills() {
           img={nextIcon}
           link="https://nextjs.org/"
         />
+        <SkillsOption title="TypeScript" img={tsIcon} link="" />
+
         <SkillsOption
           title="TailwindCSS"
           img={tailwindIcon}
@@ -49,6 +52,11 @@ function Skills() {
           img={firebaseIcon}
           link="https://firebase.google.com/"
         />
+        <SkillsOption
+          title="Git/Github"
+          img={gitIcon}
+          link="https://git-scm.com/"
+        />
         <SkillsOption title="C#" img={csharpIcon} link="" />
         <SkillsOption
           title="ASP.NET"
@@ -56,11 +64,6 @@ function Skills() {
           link="https://dotnet.microsoft.com/apps/aspnet"
         />
         <SkillsOption title="SQL Server /Developer" img={sqlIcon} link="" />
-        <SkillsOption
-          title="Git/Github"
-          img={gitIcon}
-          link="https://git-scm.com/"
-        />
         <SkillsOption
           title="Material-UI"
           img={materialIcon}
@@ -71,7 +74,6 @@ function Skills() {
           img={mapboxIcon}
           link="https://www.mapbox.com/"
         />
-        <SkillsOption title="Agile/Scrum Workflow" img={scrumIcon} link="" />
       </div>
     </div>
   );
