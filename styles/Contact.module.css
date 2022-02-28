@@ -205,3 +205,10 @@
     max-width: 34em;
   }
 }
+
+@media (max-width: 480px) {
+  .contact__email {
+    width: fit-content;
+    font-size: x-small;
+  }
+}

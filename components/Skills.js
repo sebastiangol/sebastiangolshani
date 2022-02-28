@@ -16,6 +16,7 @@ import materialIcon from '../public/imagesSkills/materialIcon.png';
 import mapboxIcon from '../public/imagesSkills/mapboxIcon.png';
 import scrumIcon from '../public/imagesSkills/scrumIcon.png';
 import tsIcon from '../public/imagesSkills/tsIcon.png';
+import nodeIcon from '../public/imagesSkills/nodeIcon.png';
 
 function Skills() {
   return (
@@ -57,23 +58,27 @@ function Skills() {
           img={gitIcon}
           link="https://git-scm.com/"
         />
-        <SkillsOption title="C#" img={csharpIcon} link="" />
+        {/* <SkillsOption title="C#" img={csharpIcon} link="" /> */}
         <SkillsOption
-          title="ASP.NET"
-          img={aspIcon}
-          link="https://dotnet.microsoft.com/apps/aspnet"
+          title="Node.js"
+          img={nodeIcon}
+          link="https://nodejs.org/"
         />
-        <SkillsOption title="SQL Server /Developer" img={sqlIcon} link="" />
         <SkillsOption
+          title="SQL/Postgres"
+          img={sqlIcon}
+          link="https://www.postgresql.org/"
+        />
+        {/* <SkillsOption
           title="Material-UI"
           img={materialIcon}
           link="https://material-ui.com/"
-        />
-        <SkillsOption
+        /> */}
+        {/* <SkillsOption
           title="Mapbox"
           img={mapboxIcon}
           link="https://www.mapbox.com/"
-        />
+        /> */}
       </div>
     </div>
   );

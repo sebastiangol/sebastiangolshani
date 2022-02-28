@@ -123,11 +123,11 @@
 
 @media (max-width: 614px) {
   .projects__option {
-    width: 28em;
+    width: fit-content;
   }
 
   .projects__optionImage {
-    width: 448px;
-    height: 232px;
+    width: 100%;
+    height: 200px;
   }
 }

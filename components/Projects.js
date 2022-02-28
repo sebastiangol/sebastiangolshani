@@ -5,6 +5,7 @@ import socialmediaImage from '../public/imagesProjects/socialmedia.png';
 import moviesImage from '../public/imagesProjects/movies.png';
 import emailserviceImage from '../public/imagesProjects/emailservice.png';
 import sebgramImage from '../public/imagesProjects/sebgram.png';
+import bosstrackerImage from '../public/imagesProjects/bosstracker.png';
 
 function Projects() {
   return (
@@ -12,12 +13,12 @@ function Projects() {
       <h1>Projects</h1>
       <div className={Styles.projects__options}>
         <ProjectsOption
-          title="Seb Holidays"
-          img={holidaysImage}
-          description="Responsive website for looking up holidays with the search bar. Based on Airbnb."
-          tools="HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Heroicons, Mapbox, API-Fetch"
-          live="https://seb-holidays.vercel.app/"
-          code="https://github.com/sebastiangol/seb-holidays"
+          title="Bosstracker"
+          img={bosstrackerImage}
+          description="An application for tracking video-game boss progress. Authentication/Authorisation"
+          tools="HTML, CSS, JavaScript, React, Heroicons, Node.js, Express, PostgreSQL"
+          live="https://bosstracker.vercel.app/"
+          code="https://github.com/sebastiangol/bosstracker"
         />
         <ProjectsOption
           title="Sebgram"
@@ -27,15 +28,6 @@ function Projects() {
           live="https://sebgram.vercel.app/"
           code="https://github.com/sebastiangol/sebgram"
         />
-        {/* <ProjectsOption
-          title="Seb Socialmedia"
-          img={socialmediaImage}
-          description="Social media website for viewing/making posts.
-          User authentication. Based on Linkedin."
-          tools="HTML, CSS, JavaScript, React, Redux, Material-UI, Firebase, Authentication"
-          live="https://react-app-socialmedia.web.app/"
-          code="https://github.com/sebastiangol/react-app-socialmedia"
-        /> */}
         <ProjectsOption
           title="Seb Movies"
           img={moviesImage}
@@ -43,6 +35,23 @@ function Projects() {
           tools="HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Heroicons, TMDB API"
           live="https://seb-movies.vercel.app/"
           code="https://github.com/sebastiangol/seb-movies"
+        />
+        <ProjectsOption
+          title="Seb Holidays"
+          img={holidaysImage}
+          description="Responsive website for looking up holidays with the search bar. Based on Airbnb."
+          tools="HTML, CSS, JavaScript, React, Next.js, TailwindCSS, Heroicons, Mapbox, API-Fetch"
+          live="https://seb-holidays.vercel.app/"
+          code="https://github.com/sebastiangol/seb-holidays"
+        />
+        <ProjectsOption
+          title="Seb Socialmedia"
+          img={socialmediaImage}
+          description="Social media website for viewing/making posts.
+          User authentication. Based on Linkedin."
+          tools="HTML, CSS, JavaScript, React, Redux, Material-UI, Firebase, Authentication"
+          live="https://react-app-socialmedia.web.app/"
+          code="https://github.com/sebastiangol/react-app-socialmedia"
         />
         <ProjectsOption
           title="Seb Emailservice"

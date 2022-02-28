@@ -164,3 +164,18 @@
     margin: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar__option {
+  }
+
+  .navbar__optionTitle {
+    font-size: small;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__optionIcon {
+    display: none !important;
+  }
+}
